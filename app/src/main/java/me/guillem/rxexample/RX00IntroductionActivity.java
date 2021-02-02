@@ -17,7 +17,7 @@ public class RX00IntroductionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rx00_introduction);
+        setContentView(R.layout.activity_rx00_intro);
 
         Observable<String> numbersObservable =
                 Observable.just("1","2","3","4","5","6","7","8","9","10");
@@ -46,7 +46,6 @@ public class RX00IntroductionActivity extends AppCompatActivity {
 
         numbersObservable
                 .subscribeOn(Schedulers.io())
-                .observeOn(Schedulers.io())
                 .subscribe(numbersObserver);
     }
 }
