@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button btRX00Introduccion;
+    private Button btRX01Disposable;
 
 
     @Override
@@ -28,5 +29,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), RX00IntroductionActivity.class));
             }
         });
+
+
+        btRX01Disposable = findViewById(R.id.btRX01Disposable);
+        btRX01Disposable.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            startActivity(new Intent(getApplicationContext(), RX01DisposableActivity.class));
+        }
+    });
     }
+
 }

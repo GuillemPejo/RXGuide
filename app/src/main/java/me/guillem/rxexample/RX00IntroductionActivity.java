@@ -45,6 +45,8 @@ public class RX00IntroductionActivity extends AppCompatActivity {
         };
 
         numbersObservable
+                .subscribeOn(Schedulers.io())
+                .observeOn(Schedulers.io())
                 .subscribe(numbersObserver);
     }
 }

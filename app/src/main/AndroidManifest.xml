@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RXExample">
+        <activity android:name=".RX01DisposableActivity" />
         <activity android:name=".RX00IntroductionActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>

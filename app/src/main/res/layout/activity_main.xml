@@ -14,7 +14,14 @@
 
         <Button
             android:id="@+id/btRX00Introduccion"
-            android:text="Introduccion"
+            android:text="Introduction"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btRX01Disposable"
+            android:text="Disposable"
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:layout_width="wrap_content"
