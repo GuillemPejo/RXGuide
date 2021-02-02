@@ -15,6 +15,10 @@ public class MainActivity extends AppCompatActivity {
     private Button btRX03Operadores;
     private Button btRX04TipoObservables;
     private Button btRX05Subject;
+    private Button btRX06Bus;
+    private Button btRX07Binding;
+    private Button btRX08BackPressure;
+    private Button btRX09HotAndCold;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +74,38 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), RX05SubjectActivity.class));
+            }
+        });
+
+        btRX06Bus = findViewById(R.id.btRX06Bus);
+        btRX06Bus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), RX06BusActivity.class));
+            }
+        });
+
+        btRX07Binding = findViewById(R.id.btRX07Binding);
+        btRX07Binding.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), RX07BindingActivity.class));
+            }
+        });
+
+        btRX08BackPressure = findViewById(R.id.btRX08BackPressure);
+        btRX08BackPressure.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), RX08BackPressureActivity.class));
+            }
+        });
+
+        btRX09HotAndCold = findViewById(R.id.btRX09HotAndCold);
+        btRX09HotAndCold.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), RX09HotAndColdActivity.class));
             }
         });
     }
