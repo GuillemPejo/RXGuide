@@ -9,8 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RXExample">
+        <activity android:name=".RX05SubjectActivity"></activity>
+        <activity android:name=".RX04TiposObservablesActivity" />
+        <activity android:name=".RX03OperadoresActivity" />
+        <activity android:name=".RX02CompositeDisposableActivity" />
         <activity android:name=".RX01DisposableActivity" />
-        <activity android:name=".RX00IntroductionActivity"></activity>
+        <activity android:name=".RX00IntroductionActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
